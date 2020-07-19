@@ -11,7 +11,7 @@ export class FooterComponent implements OnInit {
   constructor() {}
 
   ngOnInit(): void {
-    this.credit = ' Design By : Harshl with ';
+    this.credit = ' Design By : Harshal with ';
     this.language = 'Angular';
   }
 
