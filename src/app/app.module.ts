@@ -20,7 +20,8 @@ import { environment } from 'src/environments/environment';
 import { DataService } from './services/data.service';
 import { ShapeService } from './services/shape.service';
 import { TextNodeService } from './services/text-node.service';
-
+import { TestComponent } from './components/test/test.component';
+import { DatePipe } from '@angular/common';
 @NgModule({
   declarations: [
     AppComponent,
@@ -28,6 +29,7 @@ import { TextNodeService } from './services/text-node.service';
     FooterComponent,
     HomeComponent,
     ContactComponent,
+    TestComponent,
   ],
   imports: [
     BrowserModule,
@@ -43,7 +45,7 @@ import { TextNodeService } from './services/text-node.service';
     AngularFireAuthModule,
     AngularFireStorageModule,
   ],
-  providers: [DataService, ShapeService, TextNodeService],
+  providers: [DataService, ShapeService, TextNodeService, DatePipe],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
