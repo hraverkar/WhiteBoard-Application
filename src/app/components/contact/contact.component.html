@@ -1,0 +1,47 @@
+<mat-grid-list cols="2">
+  <mat-grid-tile>
+    <mat-card>
+      <mat-card-title-group>
+        <mat-card-title>Contact Us</mat-card-title>
+      </mat-card-title-group>
+
+      <form #f="ngForm" (ngSubmit)="saveInfo(f)">
+        <p>
+          <mat-form-field>
+            <mat-label>Fulll Name</mat-label>
+            <input matInput placeholder="Full Name" ngModel name="name">
+          </mat-form-field>
+        </p>
+
+        <p>
+          <mat-form-field>
+            <mat-label>Email Address</mat-label>
+            <input matInput placeholder="Email Address" ngModel name="emailadd">
+          </mat-form-field>
+        </p>
+
+        <p>
+          <mat-form-field>
+            <mat-label>Company</mat-label>
+            <input matInput placeholder="Company" ngModel name="company">
+          </mat-form-field>
+        </p>
+
+        <p>
+          <mat-form-field>
+            <mat-label>Message</mat-label>
+            <textarea matInput placeholder="Message" ngModel name="message"></textarea>
+          </mat-form-field>
+        </p>
+        <div class="button">
+          <button mat-raised-button color="primary" color="primary">Submit</button>
+        </div>
+      </form>
+    </mat-card>
+  </mat-grid-tile>
+  <mat-grid-tile>
+    <mat-card style="width: 500px;">
+      <img MatCardSmImage src="../../../assets/contactus.jpg" style="width: 500px; height: 500px;">
+    </mat-card>
+  </mat-grid-tile>
+</mat-grid-list>
